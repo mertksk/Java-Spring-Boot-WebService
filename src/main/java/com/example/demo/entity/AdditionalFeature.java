@@ -23,6 +23,9 @@ public class AdditionalFeature {
 
 
     @OneToMany(mappedBy = "feature", cascade = CascadeType.ALL)
+    private List<ComputerFeature> computers;
+
+    @OneToMany(mappedBy = "feature", cascade = CascadeType.ALL)
     private List<PhoneFeature> phones;
 
 
