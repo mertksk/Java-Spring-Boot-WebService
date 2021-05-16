@@ -31,5 +31,6 @@ public class Computer {
     @OneToMany(targetEntity = Review.class, cascade = CascadeType.ALL)
     private List<Review> reviews;
 
-   
+    @OneToMany(mappedBy= "computer", cascade= CascadeType.ALL)
+    private List<ComputerFeature> computerFeatures;
 }
